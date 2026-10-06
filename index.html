@@ -28,8 +28,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="assets/fonts/source-serif-4-greek.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/manrope-greek.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/kentro-psychotherapeias-neos-kosmos.webp" media="(min-width:701px)" fetchpriority="high">
-<link rel="preload" as="image" href="assets/img/kentro-psychotherapeias-neos-kosmos-640.webp" media="(max-width:700px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/kentro-psychotherapeias-neos-kosmos-1536.webp" media="(min-width:1024px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/kentro-psychotherapeias-neos-kosmos-828.webp" media="(max-width:1023px)" fetchpriority="high">
 <script>document.documentElement.classList.add('js')</script>
 <style id="advon-fonts">@font-face{font-family:'Source Serif 4';font-style:normal;font-display:swap;font-weight:200 900;src:url(assets/fonts/source-serif-4-greek.woff2) format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:'Source Serif 4';font-style:normal;font-display:swap;font-weight:200 900;src:url(assets/fonts/source-serif-4-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:200 800;src:url(assets/fonts/manrope-greek.woff2) format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:200 800;src:url(assets/fonts/manrope-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
 <style>@font-face{font-family:'Source Serif 4 Fallback';src:local('Georgia');size-adjust:96%;ascent-override:98%;descent-override:30%}@font-face{font-family:'Manrope Fallback';src:local('Arial');size-adjust:104%;ascent-override:100%;descent-override:28%}/* ===== Συνείναι · tokens ===== */
@@ -156,9 +156,10 @@ html[lang="en"] .brand .b-mark,html[lang="en"] .brand .b-en{display:block}
 html:not(.intro-on) .intro{display:none}
 
 /* ===== hero ===== */
-.hero{position:relative;min-height:100svh;padding:118px 0 72px;display:flex;align-items:center;overflow:clip;isolation:isolate}
-.hero-g{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(32px,5vw,84px);align-items:center}
-.hero h1{font-size:clamp(42px,5.2vw,74px);line-height:1.04;font-weight:330;letter-spacing:-.022em}
+.hero{position:relative;min-height:100svh;padding:118px 0 80px;display:flex;align-items:center;overflow:clip;isolation:isolate}
+.hero-g{display:grid;grid-template-columns:44% 1fr;align-items:center}
+@media (min-width:1024px) and (max-height:760px){.hero{padding:96px 0 40px}.hero h1{font-size:clamp(38px,3.9vw,56px)}.hero h1 .eyebrow{margin-bottom:18px}.hero-sub{margin:18px 0 24px}.hero-meta{margin-top:22px}}
+.hero h1{font-size:clamp(42px,4.6vw,70px);line-height:1.04;font-weight:330;letter-spacing:-.022em}
 .hero h1 .eyebrow{display:flex;font-family:var(--sans);letter-spacing:.14em;margin-bottom:26px;line-height:1.3}
 .hero h1 .hl{display:block}
 .w{display:inline-block}
@@ -178,26 +179,23 @@ html[lang=en] .hero h1{font-size:clamp(40px,4.6vw,64px)}
 @media (max-width:640px){.hero-meta{grid-template-columns:1fr}}
 .hero-meta span{display:inline-flex;align-items:center;gap:8px}
 .hero-meta svg{width:16px;height:16px;color:var(--sage)}
-/* the bubble photo */
-.bub{position:relative;justify-self:center;width:min(100%,560px);aspect-ratio:860/1000}
-.bub-blob{position:absolute;left:-14%;top:4%;width:118%;height:96%;border-radius:50%;background:var(--sand);transform:rotate(-18deg);z-index:-1;animation:breathe 14s ease-in-out infinite alternate}
-@keyframes breathe{from{transform:rotate(-18deg) scale(1)}to{transform:rotate(-12deg) scale(1.045) translate(1.5%,-1%)}}
-.bub-ph{position:absolute;inset:0;clip-path:url(#bubClip);filter:drop-shadow(0 0 0 transparent)}
-.bub-ph picture,.bub-ph img{display:block;width:100%;height:100%}
-.bub-ph img{object-fit:cover;object-position:50% 60%}
-.js .bub-ph{transform:scale(.94) translateY(12px);transition:transform 1.3s var(--ease);transition-delay:.15s}
-.js .hero.go .bub-ph{transform:none}
-.bub-ph img{animation:kb 22s ease-in-out infinite alternate}
-@keyframes kb{from{transform:scale(1.04)}to{transform:scale(1.12) translate(-1.5%,-1%)}}
-.bub-ln{position:absolute;left:-2.6%;top:-2.6%;width:105.2%;height:105.2%;overflow:visible;pointer-events:none}
-.bub-ln path{fill:none;stroke:var(--ink);stroke-width:2;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.2s .55s cubic-bezier(.6,0,.25,1);opacity:.8}
-.hero.go .bub-ln path,html:not(.js) .bub-ln path{stroke-dashoffset:0}
-.bub-shadow{position:absolute;inset:6% 6% 2%;border-radius:40%;box-shadow:var(--sh-3);z-index:-1;opacity:.75}
+/* split-screen photo: full height, curved seam (the logo's blob) */
+.hero-ph{position:absolute;top:0;right:0;bottom:0;width:50%;z-index:-1;clip-path:ellipse(120% 100% at 120% 50%);background:var(--deep)}
+.hero-ph picture,.hero-ph img{display:block;width:100%;height:100%}
+.hero-ph img{object-fit:cover;object-position:50% 55%;animation:kb 26s ease-in-out infinite alternate;transform-origin:60% 50%}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.1) translate(-1.2%,-.8%)}}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,241,233,.62) 0,rgba(246,241,233,0) 150px),linear-gradient(90deg,rgba(46,50,41,.18),transparent 30%),linear-gradient(0deg,rgba(46,50,41,.28),transparent 34%);pointer-events:none}
+.hero-arc{position:absolute;z-index:-2;left:calc(50% - 26px);top:50%;width:calc(50% * 2.4 + 52px);height:calc(200% + 52px);translate:0 -50%;border-radius:50%;background:var(--sand);box-shadow:inset 0 0 0 1.5px rgba(42,40,36,.5);pointer-events:none}
+.js .hero-arc{-webkit-mask:linear-gradient(#000 0 0) 0 50%/100% 0% no-repeat;mask:linear-gradient(#000 0 0) 0 50%/100% 0% no-repeat;transition:-webkit-mask-size 1.9s .35s cubic-bezier(.6,0,.25,1),mask-size 1.9s .35s cubic-bezier(.6,0,.25,1)}
+.js .hero.go .hero-arc{-webkit-mask-size:100% 100%;mask-size:100% 100%}
+.hero-cap{position:absolute;right:28px;bottom:26px;display:inline-flex;align-items:center;gap:8px;font:600 12.5px/1 var(--sans);letter-spacing:.06em;color:#F6F1E9;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.hero-cap svg{width:15px;height:15px}
+.hero-tx{max-width:560px}
 .chip{position:absolute;display:inline-flex;align-items:center;gap:10px;background:rgba(246,241,233,.96);border-radius:999px;padding:11px 18px 11px 12px;font:650 13.5px/1.2 var(--sans);box-shadow:var(--sh-2);white-space:nowrap}
 .chip i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--sage);color:#F6F1E9;font-style:normal}
 .chip i svg{width:16px;height:16px}
-.chip-a{right:-4%;top:14%;animation:bob 6s ease-in-out infinite}
-.chip-b{left:-8%;bottom:20%;animation:bob 7s 1.2s ease-in-out infinite}
+.chip-a{right:7%;top:23%;animation:bob 6s ease-in-out infinite}
+.chip-b{left:15%;bottom:17%;animation:bob 7s 1.2s ease-in-out infinite}
 .chip-b .g{width:20px;height:20px}
 .chip-b b{font-weight:700}
 .stars{color:#D9A441;letter-spacing:1px}
@@ -205,12 +203,13 @@ html[lang=en] .hero h1{font-size:clamp(40px,4.6vw,64px)}
 .js .chip{opacity:0;scale:.85;transition:opacity .6s,scale .7s var(--spring)}
 .js .hero.go .chip{opacity:1;scale:1}
 .js .hero.go .chip-a{transition-delay:1.5s}.js .hero.go .chip-b{transition-delay:1.75s}
-.cue{position:absolute;left:50%;bottom:22px;translate:-50% 0;display:flex;flex-direction:column;align-items:center;gap:8px;font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);transition:opacity .5s}
+.cue{position:absolute;left:23%;bottom:22px;translate:-50% 0;display:flex;flex-direction:column;align-items:center;gap:8px;font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);transition:opacity .5s}
 .cue i{width:1px;height:36px;background:linear-gradient(var(--ink-3),transparent);transform-origin:top;animation:cue 2.2s ease-in-out infinite}
 @keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
 .scrolled .cue{opacity:0}
+@media (max-height:860px){.cue{display:none}}
 /* hero background */
-.hbg{position:absolute;inset:0;z-index:-2;pointer-events:none;overflow:hidden}
+.hbg{position:absolute;inset:0;z-index:-3;pointer-events:none;overflow:hidden}
 .hbg .wa,.hbg .wb{position:absolute;border-radius:50%;}
 .hbg .wa{width:62vw;height:62vw;left:-20vw;top:-24vw;background:radial-gradient(closest-side,rgba(238,189,140,.30),transparent 70%);animation:wa 26s ease-in-out infinite alternate;transform:translate(calc(var(--mx,0)*-18px),calc(var(--my,0)*-14px))}
 .hbg .wb{width:54vw;height:54vw;right:-18vw;bottom:-26vw;background:radial-gradient(closest-side,rgba(125,131,105,.20),transparent 70%);animation:wb 30s ease-in-out infinite alternate}
@@ -220,11 +219,24 @@ html[lang=en] .hero h1{font-size:clamp(40px,4.6vw,64px)}
 .hglow{position:absolute;inset:0;background:radial-gradient(420px circle at var(--gx,70%) var(--gy,40%),rgba(255,248,236,.55),transparent 60%);transition:background-position .2s}
 .hbg-off *{animation-play-state:paused!important}
 @media (max-width:1023px){
-  .hero{padding:104px 0 64px;min-height:auto}
-  .hero-g{grid-template-columns:1fr;gap:44px}
-  .bub{width:min(88%,460px)}
-  .chip-a{right:-6%}.chip-b{left:-6%}
-  .cue{display:none}
+  .hero{min-height:100svh;padding:110px 0 46px;align-items:flex-end;color:#F6F1E9}
+  .hero-g{grid-template-columns:1fr}
+  .hero-ph{width:100%;clip-path:none}
+  .hero-ph img{object-position:50% 30%}
+  .hero-shade{background:linear-gradient(180deg,rgba(28,30,25,.5) 0,rgba(28,30,25,.08) 26%,rgba(28,30,25,.35) 46%,rgba(28,30,25,.86) 72%,rgba(28,30,25,.94) 100%)}
+  .hero-arc,.chip,.cue,.hero-cap{display:none}
+  .hero h1,.hero .lead{color:#F6F1E9}
+  .hero h1 .eyebrow{color:#E9DFC9}
+  .hero em{color:var(--sun)}
+  .hero em .ul path{stroke:#F6F1E9}
+  .hero .tl{color:#F6F1E9}
+  .hero .btn-p{background:#F6F1E9;color:var(--deep)}
+  .hero-meta{color:#E4DCCD}.hero-meta svg{color:var(--sun)}
+  .hbg{display:none}
+  .hdr:not(.solid) .brand{color:#F6F1E9;--lgb:rgba(227,217,200,.32)}
+  .hdr:not(.solid) .burger{background:rgba(246,241,233,.16)}
+  .hdr:not(.solid) .burger span{background:#F6F1E9;box-shadow:0 -6px 0 #F6F1E9,0 6px 0 #F6F1E9}
+  .hdr:not(.solid) .langs button[aria-pressed="true"]{background:rgba(246,241,233,.22)}
 }
 @media (max-width:560px){.chip{font-size:12.5px;padding:9px 14px 9px 9px}.chip i{width:26px;height:26px}.hero-meta{margin-top:30px}}
 
@@ -543,7 +555,7 @@ main,.hdr{transition:opacity .3s}
 }
 @media print{.hdr,.mbar,.totop,.amb,.hbg,.intro{display:none}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MedicalBusiness","@id":"#centre","name":"Κέντρο Ψυχοθεραπείας «Συνείναι»","alternateName":["Συνείναι - Χώρος Ψυχοθεραπείας & Δημιουργικής Έκφρασης","Syneinai Psychotherapy Centre","Κατερίνα Παπαλυμπέρη & Συνεργάτες"],"description":"Κέντρο ψυχοθεραπείας στον Νέο Κόσμο για ενήλικες, εφήβους, παιδιά και οικογένειες, δια ζώσης και online.","image":"assets/img/kentro-psychotherapeias-neos-kosmos.webp","logo":"assets/icons/icon-512.png","telephone":"+30 210 921 0795","address":{"@type":"PostalAddress","streetAddress":"Ζαν Μωρεάς 40","addressLocality":"Αθήνα","addressRegion":"Αττική","postalCode":"117 45","addressCountry":"GR"},"geo":{"@type":"GeoCoordinates","latitude":37.9620381,"longitude":23.7240504},"hasMap":"https://www.google.com/maps/place/Syneinai/data=!4m6!3m5!1s0x14a1bd6da82e288d:0xe19a606c9594d715!8m2!3d37.9620381!4d23.7240504","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"areaServed":[{"@type":"Place","name":"Νέος Κόσμος"},{"@type":"Place","name":"Κουκάκι"},{"@type":"Place","name":"Αθήνα"}],"availableLanguage":["el","en"],"knowsAbout":["Ψυχοθεραπεία","Συστημική ψυχοθεραπεία","Γνωσιακή συμπεριφορική ψυχοθεραπεία","Συμβουλευτική γονέων","Θεραπεία οικογένειας","Άγχος","Κρίσεις πανικού","Κατάθλιψη","ΔΕΠ-Υ"],"sameAs":["https://www.instagram.com/syneinai/","https://www.doctoranytime.gr/d/Psychologos/kentro-psychotherapeias-syneinai"],"employee":[{"@type":"Person","name":"Κατερίνα Παπαλυμπέρη","jobTitle":"Ψυχολόγος MSc, Επιστημονικά Υπεύθυνη","knowsLanguage":["el","en"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"degree","name":"Μεταπτυχιακό Δίπλωμα Ειδίκευσης στη Σχολική Συμβουλευτική και Καθοδήγηση"}},{"@type":"Person","name":"Ηλιάνα Λάζαρη","jobTitle":"Ψυχολόγος, Συστημική/Οικογενειακή Ψυχοθεραπεύτρια","alumniOf":{"@type":"CollegeOrUniversity","name":"Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών"}},{"@type":"Person","name":"Κωνσταντίνα Λάχα","jobTitle":"Ψυχολόγος, Συστημική Ψυχοθεραπεύτρια","alumniOf":{"@type":"CollegeOrUniversity","name":"Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών"}},{"@type":"Person","name":"Μαριάση Ματζώρου","jobTitle":"Ψυχολόγος MSc, CBT Ψυχοθεραπεύτρια","alumniOf":[{"@type":"CollegeOrUniversity","name":"Πανεπιστήμιο Κρήτης"},{"@type":"CollegeOrUniversity","name":"Utrecht University"}]},{"@type":"Person","name":"Ευτυχία Γκουτζαμάνη","jobTitle":"Ψυχολόγος"}]},{"@type":"WebSite","name":"Συνείναι","inLanguage":["el","en"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Πώς κλείνω ραντεβού;","acceptedAnswer":{"@type":"Answer","text":"Μπορείτε να καλέσετε στο 210 921 0795 ή να κλείσετε online μέσω doctoranytime. Αν έχετε προτίμηση σε συγκεκριμένη θεραπεύτρια, γράψτε τη στα σχόλια του ραντεβού και θα ληφθεί υπόψη ανάλογα με τη διαθεσιμότητα."}},{"@type":"Question","name":"Πώς επιλέγεται η θεραπεύτρια που θα με αναλάβει;","acceptedAnswer":{"@type":"Answer","text":"Ανάλογα με το θεραπευτικό αίτημα και τη διαθεσιμότητα, γίνεται αντιστοίχιση με το κατάλληλο μέλος της ομάδας. Αναγνωρίζουμε ότι το ταίριασμα θεραπευτή και θεραπευόμενου είναι σημαντικό για μια ουσιαστική θεραπευτική σχέση."}},{"@type":"Question","name":"Πόσο διαρκεί μια συνεδρία;","acceptedAnswer":{"@type":"Answer","text":"Κάθε συνεδρία διαρκεί 50 λεπτά, είτε γίνεται δια ζώσης στον χώρο μας στη Ζαν Μωρεάς 40 είτε με βιντεοκλήση."}},{"@type":"Question","name":"Γίνονται συνεδρίες online;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Εκτός από τις συνεδρίες δια ζώσης στον Νέο Κόσμο, μπορείτε να κάνετε συνεδρίες με βιντεοκλήση. Στο Συνείναι λειτουργούν επίσης διαδικτυακές ψυχοθεραπευτικές ομάδες ενηλίκων."}},{"@type":"Question","name":"Είναι το κέντρο συμβεβλημένο με τον ΕΟΠΥΥ;","acceptedAnswer":{"@type":"Answer","text":"Ναι, το Κέντρο Ψυχοθεραπείας «Συνείναι» είναι συμβεβλημένο με τον ΕΟΠΥΥ. Για τις λεπτομέρειες που αφορούν τη δική σας περίπτωση, επικοινωνήστε μαζί μας στο 210 921 0795."}},{"@type":"Question","name":"Υπάρχει μειωμένο κόστος;","acceptedAnswer":{"@type":"Answer","text":"Ναι, υπάρχει ειδικό κόστος συνεδρίας για ανέργους και φοιτητές. Η πληρωμή γίνεται με κάρτα ή Klarna κατά την online κράτηση, ή με μετρητά στον χώρο."}},{"@type":"Question","name":"Με ποιες θεραπευτικές προσεγγίσεις δουλεύετε;","acceptedAnswer":{"@type":"Answer","text":"Η ομάδα έχει κατάρτιση στη Συστημική Ψυχοθεραπεία και Συμβουλευτική, στη Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT) και στην Αναλυτική Ψυχοθεραπεία, και συμμετέχει σε συνεχή επιμόρφωση και εποπτεία."}},{"@type":"Question","name":"Δουλεύετε με παιδιά και εφήβους;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Η ομάδα δουλεύει με παιδιά και εφήβους, με εμπειρία στη διερεύνηση αναπτυξιακών, συναισθηματικών και συμπεριφορικών δυσκολιών και στην υποστήριξη παιδιών με ΔΕΠ-Υ και αυτισμό, ενώ παρέχει και συμβουλευτική γονέων."}},{"@type":"Question","name":"Μπορώ να ακυρώσω ένα ραντεβού;","acceptedAnswer":{"@type":"Answer","text":"Μπορείτε να ακυρώσετε ένα ραντεβού έως 24 ώρες πριν χωρίς χρέωση. Αν έχετε πληρώσει online, γίνεται επιστροφή χρημάτων."}},{"@type":"Question","name":"Πώς έρχομαι στο κέντρο;","acceptedAnswer":{"@type":"Answer","text":"Το κέντρο βρίσκεται στη Ζαν Μωρεάς 40 στον Νέο Κόσμο, λίγα λεπτά με τα πόδια από τον σταθμό μετρό Συγγρού-Φιξ. Δεν υπάρχει ιδιωτικός χώρος στάθμευσης."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MedicalBusiness","@id":"#centre","name":"Κέντρο Ψυχοθεραπείας «Συνείναι»","alternateName":["Συνείναι - Χώρος Ψυχοθεραπείας & Δημιουργικής Έκφρασης","Syneinai Psychotherapy Centre","Κατερίνα Παπαλυμπέρη & Συνεργάτες"],"description":"Κέντρο ψυχοθεραπείας στον Νέο Κόσμο για ενήλικες, εφήβους, παιδιά και οικογένειες, δια ζώσης και online.","image":"assets/img/kentro-psychotherapeias-neos-kosmos-1536.webp","logo":"assets/icons/icon-512.png","telephone":"+30 210 921 0795","address":{"@type":"PostalAddress","streetAddress":"Ζαν Μωρεάς 40","addressLocality":"Αθήνα","addressRegion":"Αττική","postalCode":"117 45","addressCountry":"GR"},"geo":{"@type":"GeoCoordinates","latitude":37.9620381,"longitude":23.7240504},"hasMap":"https://www.google.com/maps/place/Syneinai/data=!4m6!3m5!1s0x14a1bd6da82e288d:0xe19a606c9594d715!8m2!3d37.9620381!4d23.7240504","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"areaServed":[{"@type":"Place","name":"Νέος Κόσμος"},{"@type":"Place","name":"Κουκάκι"},{"@type":"Place","name":"Αθήνα"}],"availableLanguage":["el","en"],"knowsAbout":["Ψυχοθεραπεία","Συστημική ψυχοθεραπεία","Γνωσιακή συμπεριφορική ψυχοθεραπεία","Συμβουλευτική γονέων","Θεραπεία οικογένειας","Άγχος","Κρίσεις πανικού","Κατάθλιψη","ΔΕΠ-Υ"],"sameAs":["https://www.instagram.com/syneinai/","https://www.doctoranytime.gr/d/Psychologos/kentro-psychotherapeias-syneinai"],"employee":[{"@type":"Person","name":"Κατερίνα Παπαλυμπέρη","jobTitle":"Ψυχολόγος MSc, Επιστημονικά Υπεύθυνη","knowsLanguage":["el","en"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"degree","name":"Μεταπτυχιακό Δίπλωμα Ειδίκευσης στη Σχολική Συμβουλευτική και Καθοδήγηση"}},{"@type":"Person","name":"Ηλιάνα Λάζαρη","jobTitle":"Ψυχολόγος, Συστημική/Οικογενειακή Ψυχοθεραπεύτρια","alumniOf":{"@type":"CollegeOrUniversity","name":"Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών"}},{"@type":"Person","name":"Κωνσταντίνα Λάχα","jobTitle":"Ψυχολόγος, Συστημική Ψυχοθεραπεύτρια","alumniOf":{"@type":"CollegeOrUniversity","name":"Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών"}},{"@type":"Person","name":"Μαριάση Ματζώρου","jobTitle":"Ψυχολόγος MSc, CBT Ψυχοθεραπεύτρια","alumniOf":[{"@type":"CollegeOrUniversity","name":"Πανεπιστήμιο Κρήτης"},{"@type":"CollegeOrUniversity","name":"Utrecht University"}]},{"@type":"Person","name":"Ευτυχία Γκουτζαμάνη","jobTitle":"Ψυχολόγος"}]},{"@type":"WebSite","name":"Συνείναι","inLanguage":["el","en"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Πώς κλείνω ραντεβού;","acceptedAnswer":{"@type":"Answer","text":"Μπορείτε να καλέσετε στο 210 921 0795 ή να κλείσετε online μέσω doctoranytime. Αν έχετε προτίμηση σε συγκεκριμένη θεραπεύτρια, γράψτε τη στα σχόλια του ραντεβού και θα ληφθεί υπόψη ανάλογα με τη διαθεσιμότητα."}},{"@type":"Question","name":"Πώς επιλέγεται η θεραπεύτρια που θα με αναλάβει;","acceptedAnswer":{"@type":"Answer","text":"Ανάλογα με το θεραπευτικό αίτημα και τη διαθεσιμότητα, γίνεται αντιστοίχιση με το κατάλληλο μέλος της ομάδας. Αναγνωρίζουμε ότι το ταίριασμα θεραπευτή και θεραπευόμενου είναι σημαντικό για μια ουσιαστική θεραπευτική σχέση."}},{"@type":"Question","name":"Πόσο διαρκεί μια συνεδρία;","acceptedAnswer":{"@type":"Answer","text":"Κάθε συνεδρία διαρκεί 50 λεπτά, είτε γίνεται δια ζώσης στον χώρο μας στη Ζαν Μωρεάς 40 είτε με βιντεοκλήση."}},{"@type":"Question","name":"Γίνονται συνεδρίες online;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Εκτός από τις συνεδρίες δια ζώσης στον Νέο Κόσμο, μπορείτε να κάνετε συνεδρίες με βιντεοκλήση. Στο Συνείναι λειτουργούν επίσης διαδικτυακές ψυχοθεραπευτικές ομάδες ενηλίκων."}},{"@type":"Question","name":"Είναι το κέντρο συμβεβλημένο με τον ΕΟΠΥΥ;","acceptedAnswer":{"@type":"Answer","text":"Ναι, το Κέντρο Ψυχοθεραπείας «Συνείναι» είναι συμβεβλημένο με τον ΕΟΠΥΥ. Για τις λεπτομέρειες που αφορούν τη δική σας περίπτωση, επικοινωνήστε μαζί μας στο 210 921 0795."}},{"@type":"Question","name":"Υπάρχει μειωμένο κόστος;","acceptedAnswer":{"@type":"Answer","text":"Ναι, υπάρχει ειδικό κόστος συνεδρίας για ανέργους και φοιτητές. Η πληρωμή γίνεται με κάρτα ή Klarna κατά την online κράτηση, ή με μετρητά στον χώρο."}},{"@type":"Question","name":"Με ποιες θεραπευτικές προσεγγίσεις δουλεύετε;","acceptedAnswer":{"@type":"Answer","text":"Η ομάδα έχει κατάρτιση στη Συστημική Ψυχοθεραπεία και Συμβουλευτική, στη Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT) και στην Αναλυτική Ψυχοθεραπεία, και συμμετέχει σε συνεχή επιμόρφωση και εποπτεία."}},{"@type":"Question","name":"Δουλεύετε με παιδιά και εφήβους;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Η ομάδα δουλεύει με παιδιά και εφήβους, με εμπειρία στη διερεύνηση αναπτυξιακών, συναισθηματικών και συμπεριφορικών δυσκολιών και στην υποστήριξη παιδιών με ΔΕΠ-Υ και αυτισμό, ενώ παρέχει και συμβουλευτική γονέων."}},{"@type":"Question","name":"Μπορώ να ακυρώσω ένα ραντεβού;","acceptedAnswer":{"@type":"Answer","text":"Μπορείτε να ακυρώσετε ένα ραντεβού έως 24 ώρες πριν χωρίς χρέωση. Αν έχετε πληρώσει online, γίνεται επιστροφή χρημάτων."}},{"@type":"Question","name":"Πώς έρχομαι στο κέντρο;","acceptedAnswer":{"@type":"Answer","text":"Το κέντρο βρίσκεται στη Ζαν Μωρεάς 40 στον Νέο Κόσμο, λίγα λεπτά με τα πόδια από τον σταθμό μετρό Συγγρού-Φιξ. Δεν υπάρχει ιδιωτικός χώρος στάθμευσης."}}]}]}</script>
 <style id="advon-consent-css">.advon-ck{position:fixed;z-index:2147483000;left:16px;right:16px;bottom:16px;max-width:440px;background:#fff;color:#1d1d1f;border:1px solid rgba(0,0,0,.08);border-radius:20px;box-shadow:0 26px 60px -20px rgba(0,0,0,.35),0 2px 10px rgba(0,0,0,.06);padding:20px 20px 18px;font:inherit;font-size:14px;line-height:1.55;text-align:left;animation:advon-up .5s cubic-bezier(.16,1,.3,1) both}
 .advon-ck[hidden]{display:none}
 .advon-ck-t{font-weight:700;font-size:16px;margin:0 0 6px;color:#1d1d1f}
@@ -645,27 +657,25 @@ main,.hdr{transition:opacity .3s}
       <p class="lead hero-sub fade" style="--d:.75s" data-en="Psychotherapy for adults, adolescents, children and families, from a team of licensed psychologists — in person at 40 Zan Moreas Street or online.">Ψυχοθεραπεία για ενήλικες, εφήβους, παιδιά και οικογένειες, από ομάδα αδειοδοτημένων ψυχολόγων — δια ζώσης στη Ζαν Μωρεάς 40 ή online.</p>
       <div class="hero-cta fade" style="--d:.9s">
         <a class="btn btn-p mag" href="https://www.doctoranytime.gr/d/Psychologos/kentro-psychotherapeias-syneinai?autobook=1" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg><span data-en="Book a session">Κλείστε ραντεβού</span></a>
-        <a class="tl" href="#omada"><span data-en="Find the right therapist for you">Βρείτε τη θεραπεύτρια που σας ταιριάζει</span> <span class="arw" aria-hidden="true">→</span></a>
+        <a class="tl" href="#omada"><span data-en="Find the right therapist for you">Βρείτε τη θεραπεύτρια που σας ταιριάζει</span>&nbsp;<span class="arw" aria-hidden="true">→</span></a>
       </div>
       <div class="hero-meta fade" style="--d:1.05s">
         <span><svg><use href="#i-check"/></svg><span data-en="Contracted with EOPYY">Συμβεβλημένο με ΕΟΠΥΥ</span></span>
         <span><svg><use href="#i-pin"/></svg><span data-en="Near Syngrou-Fix metro">Κοντά στο μετρό Συγγρού-Φιξ</span></span>
       </div>
     </div>
-    <div class="bub">
-      <i class="bub-blob" aria-hidden="true"></i>
-      <i class="bub-shadow" aria-hidden="true"></i>
-      <div class="bub-ph">
-        <picture>
-          <source media="(max-width:700px)" srcset="assets/img/kentro-psychotherapeias-neos-kosmos-640.webp" width="640" height="853">
-          <img src="assets/img/kentro-psychotherapeias-neos-kosmos.webp" width="1000" height="1333" fetchpriority="high" decoding="async" alt="Το γραφείο ψυχοθεραπείας του κέντρου «Συνείναι» στον Νέο Κόσμο, με πολυθρόνα και φως από το παράθυρο" data-en-alt="The therapy room of the Syneinai centre in Neos Kosmos, with an armchair and window light">
-        </picture>
-      </div>
-      <svg class="bub-ln" viewBox="0 0 860 1000" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M103.2 0H722.4C799.8 0 860 70 860 160V750C860 840 799.8 900 722.4 900H369.8L258 995Q245.1 1000 249.4 985L275.2 900H111.8C51.6 900 0 840 0 760V130C0 60 43 0 103.2 0Z"/></svg>
-      <span class="chip chip-a"><i><svg><use href="#i-video"/></svg></i><span data-en="In person &amp; online">Δια ζώσης &amp; online</span></span>
-      <span class="chip chip-b"><svg class="g"><use href="#i-g"/></svg><b data-en="5.0">5,0</b><span class="stars" aria-hidden="true">★★★★★</span><span data-en="on Google">στο Google</span></span>
-    </div>
   </div>
+  <div class="hero-ph" aria-hidden="false">
+    <picture>
+      <source media="(max-width:1023px)" srcset="assets/img/kentro-psychotherapeias-neos-kosmos-828.webp" width="828" height="1104">
+      <img src="assets/img/kentro-psychotherapeias-neos-kosmos-1536.webp" width="1536" height="2048" fetchpriority="high" decoding="async" alt="Το γραφείο ψυχοθεραπείας του κέντρου «Συνείναι» στον Νέο Κόσμο, με πολυθρόνα και φως από το παράθυρο" data-en-alt="The therapy room of the Syneinai centre in Neos Kosmos, with an armchair and window light">
+    </picture>
+    <i class="hero-shade" aria-hidden="true"></i>
+    <span class="chip chip-a"><i><svg><use href="#i-video"/></svg></i><span data-en="In person &amp; online">Δια ζώσης &amp; online</span></span>
+    <span class="chip chip-b"><svg class="g"><use href="#i-g"/></svg><b data-en="5.0">5,0</b><span class="stars" aria-hidden="true">★★★★★</span><span data-en="on Google">στο Google</span></span>
+    <span class="hero-cap"><svg><use href="#i-pin"/></svg><span data-en="Our space · 40 Zan Moreas Street">Ο χώρος μας · Ζαν Μωρεάς 40</span></span>
+  </div>
+  <i class="hero-arc" aria-hidden="true"></i>
   <div class="cue" aria-hidden="true"><span data-en="Scroll">Κύλιση</span><i></i></div>
 </section>
 
