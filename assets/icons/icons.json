@@ -1,0 +1,16 @@
+{
+ "source": {
+  "kind": "file",
+  "ref": "assets/img/syneinai-mark-icon.svg"
+ },
+ "source_md5": "b82b15fdf7bc8bbb7846fff96ed7dcdf",
+ "version": "ff62cc6d",
+ "tile": "#F6F1E9",
+ "crop": null,
+ "header": [
+  "inline",
+  "index.html",
+  "772fa1486a2f5173b3a8c26f4e8f3376"
+ ],
+ "made": "2026-10-06"
+}
