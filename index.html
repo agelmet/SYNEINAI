@@ -273,7 +273,7 @@ html:not(.js) .ms-in,html:not(.js) .ms-in>img{transform:none}
 @media (max-width:600px){.appr{grid-template-columns:1fr}}
 
 /* space gallery: both photos whole, same height (columns follow the photos' own ratios 4:3 and 3:4) */
-.sp-g{display:grid;grid-template-columns:1.3333fr .75fr;gap:22px;align-items:start;margin-bottom:clamp(44px,5vw,72px)}
+.sp-g{display:grid;grid-template-columns:1.3333fr .75fr;gap:22px;align-items:start;margin-top:clamp(44px,5vw,72px)}
 .sp-f{margin:0}
 .sp-g .ms{aspect-ratio:4/3;border-radius:26px;box-shadow:var(--sh-3)}
 .sp-b{width:100%;height:auto;border-radius:26px;box-shadow:var(--sh-3)}
@@ -610,8 +610,8 @@ main,.hdr{transition:opacity .3s}
     </a>
     <nav class="nav nav-l" aria-label="Κύρια πλοήγηση" data-en-aria-label="Main navigation">
       <a href="#kentro" data-en="The centre">Το κέντρο</a>
-      <a href="#ypiresies" data-en="Services">Υπηρεσίες</a>
       <a href="#omada" data-en="Our team">Η ομάδα μας</a>
+      <a href="#ypiresies" data-en="Services">Υπηρεσίες</a>
     </nav>
     <div class="nav nav-r">
       <a class="nav-link" href="#kritikes" data-en="Reviews">Κριτικές</a>
@@ -634,8 +634,8 @@ main,.hdr{transition:opacity .3s}
   </div>
   <nav aria-label="Μενού κινητού" data-en-aria-label="Mobile menu">
     <a href="#kentro" data-en="The centre">Το κέντρο</a>
-    <a href="#ypiresies" data-en="Services">Υπηρεσίες</a>
     <a href="#omada" data-en="Our team">Η ομάδα μας</a>
+    <a href="#ypiresies" data-en="Services">Υπηρεσίες</a>
     <a href="#xekiname" data-en="Getting started">Πώς ξεκινάμε</a>
     <a href="#kritikes" data-en="Reviews">Κριτικές</a>
     <a href="#epikoinonia" data-en="Contact">Επικοινωνία</a>
@@ -695,16 +695,6 @@ main,.hdr{transition:opacity .3s}
       <h2 id="h-kentro" class="lc" data-en="Psychotherapy as collaboration, not a ready-made solution">Ψυχοθεραπεία ως συνεργασία, όχι ως έτοιμη λύση</h2>
       <p class="lead rv" data-en="A bright, quiet space in Neos Kosmos for adults, children and adolescents — with a room for individual sessions and a room for groups and workshops.">Ένας φωτεινός, ήσυχος χώρος στον Νέο Κόσμο για ενήλικες, παιδιά και εφήβους — με αίθουσα για ατομικές συνεδρίες και αίθουσα για ομάδες και εργαστήρια.</p>
     </div>
-    <div class="sp-g">
-      <figure class="sp-f">
-        <div class="ms sp-a"><div class="ms-in"><img src="assets/img/aithousa-omadikis-dimiourgikis-ekfrasis.webp" width="1600" height="1200" loading="lazy" decoding="async" data-lb data-lb-cap="Η αίθουσα ομάδων και εργαστηρίων" data-en-lb-cap="The room for groups and workshops" alt="Η φωτεινή αίθουσα ομάδων του «Συνείναι» με μαξιλάρια σε κύκλο πάνω σε ψάθινο χαλί" data-en-alt="The bright group room at Syneinai with floor cushions in a circle on a jute rug"></div></div>
-        <figcaption data-en="The room for groups &amp; workshops">Η αίθουσα ομάδων &amp; εργαστηρίων</figcaption>
-      </figure>
-      <figure class="sp-f rv-zoom">
-        <img class="sp-b" src="assets/img/grafeio-synedrion-syneinai.webp" width="1200" height="1600" loading="lazy" decoding="async" data-lb data-lb-cap="Ο χώρος των ατομικών συνεδριών" data-en-lb-cap="The room for individual sessions" alt="Η πράσινη πολυθρόνα και τα ξύλινα τραπεζάκια στον χώρο των ατομικών συνεδριών, με ζεστό φως από τα στόρια" data-en-alt="The green armchair and wooden side tables in the room for individual sessions, with warm light through the blinds">
-        <figcaption data-en="The room for individual sessions">Ο χώρος των ατομικών συνεδριών</figcaption>
-      </figure>
-    </div>
     <div class="ab-g2">
       <div>
         <p class="rv-p" style="--i:0" data-en="The Syneinai Psychotherapy Centre was founded on a simple principle: psychotherapy is not the application of ready-made solutions, but a collaborative process of understanding personal experience and giving it meaning.">Το Κέντρο Ψυχοθεραπείας «Συνείναι» δημιουργήθηκε με βασική αρχή ότι η ψυχοθεραπεία δεν είναι εφαρμογή προκαθορισμένων λύσεων, αλλά μια συνεργατική διαδικασία κατανόησης και νοηματοδότησης της προσωπικής εμπειρίας.</p>
@@ -716,6 +706,16 @@ main,.hdr{transition:opacity .3s}
         <div class="appr rv-p" style="--i:4"><span data-en="Systemic therapy">Συστημική ψυχοθεραπεία</span><span data-en="Cognitive behavioural therapy (CBT)">Γνωσιακή-Συμπεριφορική (CBT)</span><span data-en="Psychodynamic therapy">Ψυχοδυναμική ψυχοθεραπεία</span></div>
       </div>
     </div>
+    <div class="sp-g">
+      <figure class="sp-f">
+        <div class="ms sp-a"><div class="ms-in"><img src="assets/img/aithousa-omadikis-dimiourgikis-ekfrasis.webp" width="1600" height="1200" loading="lazy" decoding="async" data-lb data-lb-cap="Η αίθουσα ομάδων και εργαστηρίων" data-en-lb-cap="The room for groups and workshops" alt="Η φωτεινή αίθουσα ομάδων του «Συνείναι» με μαξιλάρια σε κύκλο πάνω σε ψάθινο χαλί" data-en-alt="The bright group room at Syneinai with floor cushions in a circle on a jute rug"></div></div>
+        <figcaption data-en="The room for groups &amp; workshops">Η αίθουσα ομάδων &amp; εργαστηρίων</figcaption>
+      </figure>
+      <figure class="sp-f rv-zoom">
+        <img class="sp-b" src="assets/img/grafeio-synedrion-syneinai.webp" width="1200" height="1600" loading="lazy" decoding="async" data-lb data-lb-cap="Ο χώρος των ατομικών συνεδριών" data-en-lb-cap="The room for individual sessions" alt="Η πράσινη πολυθρόνα και τα ξύλινα τραπεζάκια στον χώρο των ατομικών συνεδριών, με ζεστό φως από τα στόρια" data-en-alt="The green armchair and wooden side tables in the room for individual sessions, with warm light through the blinds">
+        <figcaption data-en="The room for individual sessions">Ο χώρος των ατομικών συνεδριών</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -724,83 +724,6 @@ main,.hdr{transition:opacity .3s}
   <span data-en="Anxiety &amp; stress">Άγχος &amp; στρες</span><span data-en="Panic attacks">Κρίσεις πανικού</span><span data-en="Depression">Κατάθλιψη</span><span data-en="Self-esteem">Αυτοεκτίμηση</span><span data-en="Relationships">Σχέσεις</span><span data-en="Grief">Πένθος</span><span data-en="OCD">Ιδεοψυχαναγκασμοί</span><span data-en="Phobias">Φοβίες</span><span data-en="ADHD">ΔΕΠ-Υ</span><span data-en="Parent counselling">Συμβουλευτική γονέων</span><span data-en="Family therapy">Θεραπεία οικογένειας</span>
   <span data-en="Anxiety &amp; stress">Άγχος &amp; στρες</span><span data-en="Panic attacks">Κρίσεις πανικού</span><span data-en="Depression">Κατάθλιψη</span><span data-en="Self-esteem">Αυτοεκτίμηση</span><span data-en="Relationships">Σχέσεις</span><span data-en="Grief">Πένθος</span><span data-en="OCD">Ιδεοψυχαναγκασμοί</span><span data-en="Phobias">Φοβίες</span><span data-en="ADHD">ΔΕΠ-Υ</span><span data-en="Parent counselling">Συμβουλευτική γονέων</span><span data-en="Family therapy">Θεραπεία οικογένειας</span>
 </div></div>
-
-<!-- SERVICES -->
-<section class="sec" id="ypiresies" aria-labelledby="h-svc">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow rv" data-en="Services">Υπηρεσίες</span>
-      <h2 id="h-svc" class="lc" data-en="Psychotherapy and counselling for every stage of life">Ψυχοθεραπεία και συμβουλευτική για κάθε ηλικία</h2>
-      <p class="lead rv" data-en="Sessions last 50 minutes and take place in person in Neos Kosmos or by video call.">Οι συνεδρίες διαρκούν 50 λεπτά και γίνονται δια ζώσης στον Νέο Κόσμο ή με βιντεοκλήση.</p>
-    </div>
-    <div class="tabs rv" role="tablist" aria-label="Υπηρεσίες ανά ηλικία" data-en-aria-label="Services by age">
-      <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true" data-en="Adults">Ενήλικες</button>
-      <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1" data-en="Children &amp; teens">Παιδιά &amp; έφηβοι</button>
-      <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1" data-en="Parents &amp; families">Γονείς &amp; οικογένεια</button>
-      <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1" data-en="Groups &amp; workshops">Ομάδες &amp; εργαστήρια</button>
-    </div>
-    <div class="tp done" role="tabpanel" id="p1" aria-labelledby="t1">
-      <div>
-        <h3 data-en="Individual psychotherapy for adults">Ατομική ψυχοθεραπεία ενηλίκων</h3>
-        <p data-en="Individual sessions for whatever you bring: anxiety and stress that will not ease, panic attacks and phobias, low mood and depression, obsessive-compulsive thoughts, grief, anger and difficulties in relationships. Depending on what you need, the therapist works with the systemic, the cognitive-behavioural (CBT) or the psychodynamic approach.">Ατομικές συνεδρίες για όσα φέρνετε: άγχος και στρες που δεν υποχωρούν, κρίσεις πανικού και φοβίες, χαμηλή διάθεση και κατάθλιψη, ιδεοψυχαναγκαστικές σκέψεις, πένθος, θυμό και δυσκολίες στις σχέσεις. Ανάλογα με το αίτημά σας, η θεραπεύτρια αξιοποιεί τη συστημική, τη γνωσιακή-συμπεριφορική (CBT) ή την ψυχοδυναμική προσέγγιση.</p>
-        <p data-en="The work explores the request in relation to your personal history, your relationships and the wider context of your life — so that you understand what is happening and gradually build tools of your own.">Η δουλειά διερευνά το αίτημα σε σχέση με την προσωπική σας ιστορία, τις σχέσεις σας και το ευρύτερο πλαίσιο της ζωής σας — ώστε να κατανοήσετε τι σας συμβαίνει και να αποκτήσετε σταδιακά τα δικά σας εργαλεία.</p>
-      </div>
-      <ul class="tlist">
-        <li style="--i:0"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Anxiety &amp; stress">Άγχος &amp; στρες</span></li>
-        <li style="--i:1"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Panic attacks &amp; phobias">Κρίσεις πανικού &amp; φοβίες</span></li>
-        <li style="--i:2"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Depression &amp; mood">Κατάθλιψη &amp; διάθεση</span></li>
-        <li style="--i:3"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Obsessive-compulsive disorder">Ιδεοψυχαναγκαστική διαταραχή</span></li>
-        <li style="--i:4"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Self-esteem &amp; relationships">Αυτοεκτίμηση &amp; σχέσεις</span></li>
-        <li style="--i:5"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Grief &amp; anger management">Διαχείριση πένθους &amp; θυμού</span></li>
-      </ul>
-    </div>
-    <div class="tp" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
-      <div>
-        <h3 data-en="Support for children and adolescents">Υποστήριξη για παιδιά και εφήβους</h3>
-        <p data-en="Psychological support and psychotherapy for children and adolescents, at a pace that respects them. The team has experience in exploring developmental, emotional and behavioural difficulties, and in the assessment and support of children and adolescents with ADHD and autism spectrum disorder.">Ψυχολογική υποστήριξη και ψυχοθεραπεία για παιδιά και εφήβους, με ρυθμό που τα σέβεται. Η ομάδα έχει εμπειρία στη διερεύνηση αναπτυξιακών, συναισθηματικών και συμπεριφορικών δυσκολιών, καθώς και στην αξιολόγηση και υποστήριξη παιδιών και εφήβων με ΔΕΠ-Υ και Διαταραχή Αυτιστικού Φάσματος.</p>
-        <p data-en="Adolescents have individual sessions of their own, in a space of trust, while parents are supported in parallel through parent counselling.">Οι έφηβοι έχουν τις δικές τους ατομικές συνεδρίες, σε έναν χώρο εμπιστοσύνης, ενώ οι γονείς μπορούν να στηριχθούν παράλληλα μέσα από τη συμβουλευτική γονέων.</p>
-      </div>
-      <ul class="tlist">
-        <li style="--i:0"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Individual sessions for teens">Ατομικές συνεδρίες εφήβων</span></li>
-        <li style="--i:1"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="ADHD assessment &amp; support">Αξιολόγηση &amp; υποστήριξη ΔΕΠ-Υ</span></li>
-        <li style="--i:2"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Autism spectrum support">Υποστήριξη στο φάσμα του αυτισμού</span></li>
-        <li style="--i:3"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Emotional &amp; behavioural difficulties">Συναισθηματικές &amp; συμπεριφορικές δυσκολίες</span></li>
-        <li style="--i:4"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Anxiety &amp; self-esteem">Άγχος &amp; αυτοεκτίμηση</span></li>
-      </ul>
-    </div>
-    <div class="tp" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
-      <div>
-        <h3 data-en="Parent counselling and family therapy">Συμβουλευτική γονέων και θεραπεία οικογένειας</h3>
-        <p data-en="Parent counselling for the everyday and the bigger challenges of parenting, and family therapy with a systemic approach. The systemic view looks at a difficulty within the context of relationships: how a family communicates, which roles have formed and what changes when one member is struggling.">Συμβουλευτική γονέων για τις καθημερινές και τις μεγαλύτερες προκλήσεις της γονεϊκότητας, και θεραπεία οικογένειας με συστημική προσέγγιση. Η συστημική ματιά βλέπει τη δυσκολία μέσα στο πλαίσιο των σχέσεων: πώς επικοινωνεί η οικογένεια, ποιοι ρόλοι έχουν διαμορφωθεί και τι αλλάζει όταν ένα μέλος δυσκολεύεται.</p>
-        <p data-en="The aim is for the family to find new ways of supporting all of its members.">Στόχος είναι η οικογένεια να βρει νέους τρόπους να στηρίζει όλα της τα μέλη.</p>
-      </div>
-      <ul class="tlist">
-        <li style="--i:0"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Parent counselling">Συμβουλευτική γονέων</span></li>
-        <li style="--i:1"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Family therapy">Θεραπεία οικογένειας</span></li>
-        <li style="--i:2"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Systemic psychotherapy">Συστημική ψυχοθεραπεία</span></li>
-        <li style="--i:3"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Boundaries &amp; roles">Οριοθέτηση &amp; ρόλοι</span></li>
-      </ul>
-    </div>
-    <div class="tp" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
-      <div>
-        <h3 data-en="Therapy groups and creative workshops">Ψυχοθεραπευτικές ομάδες και εργαστήρια</h3>
-        <p data-en="Syneinai runs online psychotherapy groups for adults, in a safe and supportive setting where we can talk, listen and share. Dance movement therapy, empowerment and self-awareness groups and experiential creative-expression workshops — such as painting or the Vision Board workshop “Making space for what I want” — take place in the group room.">Στο Συνείναι δημιουργούμε διαδικτυακές ψυχοθεραπευτικές ομάδες ενηλίκων, σε ένα ασφαλές και υποστηρικτικό πλαίσιο, όπου μπορούμε να μιλήσουμε, να ακούσουμε και να μοιραστούμε. Στην αίθουσα ομάδων γίνονται ομάδες χοροθεραπείας, ενδυνάμωσης και αυτογνωσίας και βιωματικά εργαστήρια δημιουργικής έκφρασης — όπως ζωγραφική ή το εργαστήριο Vision Board «Χώρος για αυτό που θέλω».</p>
-        <a class="tl" href="https://www.instagram.com/syneinai/" target="_blank" rel="noopener"><span data-en="New groups and workshops are announced on Instagram">Οι νέες ομάδες και τα εργαστήρια ανακοινώνονται στο Instagram</span> <span class="arw" aria-hidden="true">↗</span></a>
-      </div>
-      <ul class="tlist">
-        <li style="--i:0"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Online therapy groups for adults">Διαδικτυακές ομάδες ενηλίκων</span></li>
-        <li style="--i:1"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Dance movement therapy">Χοροθεραπεία</span></li>
-        <li style="--i:2"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Empowerment &amp; self-awareness groups">Ομάδες ενδυνάμωσης &amp; αυτογνωσίας</span></li>
-        <li style="--i:3"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Creative-expression workshops">Εργαστήρια δημιουργικής έκφρασης</span></li>
-      </ul>
-    </div>
-    <div class="svc-foot rv">
-      <span><svg><use href="#i-video"/></svg><span data-en="Video sessions available">Συνεδρίες και με βιντεοκλήση</span></span>
-      <span><svg><use href="#i-check"/></svg><span data-en="Contracted with EOPYY">Συμβεβλημένο με ΕΟΠΥΥ</span></span>
-      <span><svg><use href="#i-check"/></svg><span data-en="Reduced fee for unemployed people &amp; students">Ειδικό κόστος για ανέργους &amp; φοιτητές</span></span>
-    </div>
-  </div>
-</section>
 
 <!-- OUR TEAM (signature: team matcher) -->
 <section class="sec on-surface sh" id="omada" aria-labelledby="h-team">
@@ -921,6 +844,84 @@ main,.hdr{transition:opacity .3s}
     <a class="btn btn-p" href="https://www.doctoranytime.gr/d/Psychologos/kentro-psychotherapeias-syneinai?autobook=1" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg><span data-en="Book a session">Κλείστε ραντεβού</span></a>
   </div>
 </dialog>
+
+<!-- SERVICES -->
+<section class="sec" id="ypiresies" aria-labelledby="h-svc">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow rv" data-en="Services">Υπηρεσίες</span>
+      <h2 id="h-svc" class="lc" data-en="Psychotherapy and counselling for every stage of life">Ψυχοθεραπεία και συμβουλευτική για κάθε ηλικία</h2>
+      <p class="lead rv" data-en="Sessions last 50 minutes and take place in person in Neos Kosmos or by video call.">Οι συνεδρίες διαρκούν 50 λεπτά και γίνονται δια ζώσης στον Νέο Κόσμο ή με βιντεοκλήση.</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Υπηρεσίες ανά ηλικία" data-en-aria-label="Services by age">
+      <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true" data-en="Adults">Ενήλικες</button>
+      <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1" data-en="Children &amp; teens">Παιδιά &amp; έφηβοι</button>
+      <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1" data-en="Parents &amp; families">Γονείς &amp; οικογένεια</button>
+      <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1" data-en="Groups &amp; workshops">Ομάδες &amp; εργαστήρια</button>
+    </div>
+    <div class="tp done" role="tabpanel" id="p1" aria-labelledby="t1">
+      <div>
+        <h3 data-en="Individual psychotherapy for adults">Ατομική ψυχοθεραπεία ενηλίκων</h3>
+        <p data-en="Individual sessions for whatever you bring: anxiety and stress that will not ease, panic attacks and phobias, low mood and depression, obsessive-compulsive thoughts, grief, anger and difficulties in relationships. Depending on what you need, the therapist works with the systemic, the cognitive-behavioural (CBT) or the psychodynamic approach.">Ατομικές συνεδρίες για όσα φέρνετε: άγχος και στρες που δεν υποχωρούν, κρίσεις πανικού και φοβίες, χαμηλή διάθεση και κατάθλιψη, ιδεοψυχαναγκαστικές σκέψεις, πένθος, θυμό και δυσκολίες στις σχέσεις. Ανάλογα με το αίτημά σας, η θεραπεύτρια αξιοποιεί τη συστημική, τη γνωσιακή-συμπεριφορική (CBT) ή την ψυχοδυναμική προσέγγιση.</p>
+        <p data-en="The work explores the request in relation to your personal history, your relationships and the wider context of your life — so that you understand what is happening and gradually build tools of your own.">Η δουλειά διερευνά το αίτημα σε σχέση με την προσωπική σας ιστορία, τις σχέσεις σας και το ευρύτερο πλαίσιο της ζωής σας — ώστε να κατανοήσετε τι σας συμβαίνει και να αποκτήσετε σταδιακά τα δικά σας εργαλεία.</p>
+      </div>
+      <ul class="tlist">
+        <li style="--i:0"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Anxiety &amp; stress">Άγχος &amp; στρες</span></li>
+        <li style="--i:1"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Panic attacks &amp; phobias">Κρίσεις πανικού &amp; φοβίες</span></li>
+        <li style="--i:2"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Depression &amp; mood">Κατάθλιψη &amp; διάθεση</span></li>
+        <li style="--i:3"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Obsessive-compulsive disorder">Ιδεοψυχαναγκαστική διαταραχή</span></li>
+        <li style="--i:4"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Self-esteem &amp; relationships">Αυτοεκτίμηση &amp; σχέσεις</span></li>
+        <li style="--i:5"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Grief &amp; anger management">Διαχείριση πένθους &amp; θυμού</span></li>
+      </ul>
+    </div>
+    <div class="tp" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+      <div>
+        <h3 data-en="Support for children and adolescents">Υποστήριξη για παιδιά και εφήβους</h3>
+        <p data-en="Psychological support and psychotherapy for children and adolescents, at a pace that respects them. The team has experience in exploring developmental, emotional and behavioural difficulties, and in the assessment and support of children and adolescents with ADHD and autism spectrum disorder.">Ψυχολογική υποστήριξη και ψυχοθεραπεία για παιδιά και εφήβους, με ρυθμό που τα σέβεται. Η ομάδα έχει εμπειρία στη διερεύνηση αναπτυξιακών, συναισθηματικών και συμπεριφορικών δυσκολιών, καθώς και στην αξιολόγηση και υποστήριξη παιδιών και εφήβων με ΔΕΠ-Υ και Διαταραχή Αυτιστικού Φάσματος.</p>
+        <p data-en="Adolescents have individual sessions of their own, in a space of trust, while parents are supported in parallel through parent counselling.">Οι έφηβοι έχουν τις δικές τους ατομικές συνεδρίες, σε έναν χώρο εμπιστοσύνης, ενώ οι γονείς μπορούν να στηριχθούν παράλληλα μέσα από τη συμβουλευτική γονέων.</p>
+      </div>
+      <ul class="tlist">
+        <li style="--i:0"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Individual sessions for teens">Ατομικές συνεδρίες εφήβων</span></li>
+        <li style="--i:1"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="ADHD assessment &amp; support">Αξιολόγηση &amp; υποστήριξη ΔΕΠ-Υ</span></li>
+        <li style="--i:2"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Autism spectrum support">Υποστήριξη στο φάσμα του αυτισμού</span></li>
+        <li style="--i:3"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Emotional &amp; behavioural difficulties">Συναισθηματικές &amp; συμπεριφορικές δυσκολίες</span></li>
+        <li style="--i:4"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Anxiety &amp; self-esteem">Άγχος &amp; αυτοεκτίμηση</span></li>
+      </ul>
+    </div>
+    <div class="tp" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+      <div>
+        <h3 data-en="Parent counselling and family therapy">Συμβουλευτική γονέων και θεραπεία οικογένειας</h3>
+        <p data-en="Parent counselling for the everyday and the bigger challenges of parenting, and family therapy with a systemic approach. The systemic view looks at a difficulty within the context of relationships: how a family communicates, which roles have formed and what changes when one member is struggling.">Συμβουλευτική γονέων για τις καθημερινές και τις μεγαλύτερες προκλήσεις της γονεϊκότητας, και θεραπεία οικογένειας με συστημική προσέγγιση. Η συστημική ματιά βλέπει τη δυσκολία μέσα στο πλαίσιο των σχέσεων: πώς επικοινωνεί η οικογένεια, ποιοι ρόλοι έχουν διαμορφωθεί και τι αλλάζει όταν ένα μέλος δυσκολεύεται.</p>
+        <p data-en="The aim is for the family to find new ways of supporting all of its members.">Στόχος είναι η οικογένεια να βρει νέους τρόπους να στηρίζει όλα της τα μέλη.</p>
+      </div>
+      <ul class="tlist">
+        <li style="--i:0"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Parent counselling">Συμβουλευτική γονέων</span></li>
+        <li style="--i:1"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Family therapy">Θεραπεία οικογένειας</span></li>
+        <li style="--i:2"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Systemic psychotherapy">Συστημική ψυχοθεραπεία</span></li>
+        <li style="--i:3"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Boundaries &amp; roles">Οριοθέτηση &amp; ρόλοι</span></li>
+      </ul>
+    </div>
+    <div class="tp" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+      <div>
+        <h3 data-en="Therapy groups and creative workshops">Ψυχοθεραπευτικές ομάδες και εργαστήρια</h3>
+        <p data-en="Syneinai runs online psychotherapy groups for adults, in a safe and supportive setting where we can talk, listen and share. Dance movement therapy, empowerment and self-awareness groups and experiential creative-expression workshops — such as painting or the Vision Board workshop “Making space for what I want” — take place in the group room.">Στο Συνείναι δημιουργούμε διαδικτυακές ψυχοθεραπευτικές ομάδες ενηλίκων, σε ένα ασφαλές και υποστηρικτικό πλαίσιο, όπου μπορούμε να μιλήσουμε, να ακούσουμε και να μοιραστούμε. Στην αίθουσα ομάδων γίνονται ομάδες χοροθεραπείας, ενδυνάμωσης και αυτογνωσίας και βιωματικά εργαστήρια δημιουργικής έκφρασης — όπως ζωγραφική ή το εργαστήριο Vision Board «Χώρος για αυτό που θέλω».</p>
+        <a class="tl" href="https://www.instagram.com/syneinai/" target="_blank" rel="noopener"><span data-en="New groups and workshops are announced on Instagram">Οι νέες ομάδες και τα εργαστήρια ανακοινώνονται στο Instagram</span> <span class="arw" aria-hidden="true">↗</span></a>
+      </div>
+      <ul class="tlist">
+        <li style="--i:0"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Online therapy groups for adults">Διαδικτυακές ομάδες ενηλίκων</span></li>
+        <li style="--i:1"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Dance movement therapy">Χοροθεραπεία</span></li>
+        <li style="--i:2"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Empowerment &amp; self-awareness groups">Ομάδες ενδυνάμωσης &amp; αυτογνωσίας</span></li>
+        <li style="--i:3"><svg aria-hidden="true"><use href="#i-bub"/></svg><span data-en="Creative-expression workshops">Εργαστήρια δημιουργικής έκφρασης</span></li>
+      </ul>
+    </div>
+    <div class="svc-foot rv">
+      <span><svg><use href="#i-video"/></svg><span data-en="Video sessions available">Συνεδρίες και με βιντεοκλήση</span></span>
+      <span><svg><use href="#i-check"/></svg><span data-en="Contracted with EOPYY">Συμβεβλημένο με ΕΟΠΥΥ</span></span>
+      <span><svg><use href="#i-check"/></svg><span data-en="Reduced fee for unemployed people &amp; students">Ειδικό κόστος για ανέργους &amp; φοιτητές</span></span>
+    </div>
+  </div>
+</section>
+
 
 
 
